@@ -41,11 +41,64 @@ section, footer {
     padding: 4px;
     justify-content: end;
 }
+div {
+    display:flex;
+    font-size: 30px;
+}
+#image1 {
+    display:flex;
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+}
+#First-text {
+    position: absolute;
+    bottom: 300px;
+    display: block;
+    background-color: rgb(39,114,107);
+    color: rgb(49, 45, 45);
+}
+#image1:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+.images2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:400px;
+    height:300px;
+    border: 2px solid black;
+}
+#stock2:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+#stock3:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+#stock4:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
 @media screen and (max-width: 900px) {
     nav, section, footer {
         flex-direction: column;
         display: block;
-        
     }
-    
+    #image1{
+        width:500px;
+        Height:400px;
+    }
+}
+@media screen and (max-width: 700px){
+    #image1{
+        width: 400px;
+        height:300px;
+    }
 }
