@@ -1,14 +1,16 @@
 header {
     background-color: rgb(39, 114, 107);
     Color: rgb(49, 45, 45);
-    text-align: center;
-    font-size: 50px;
+    text-align: left;
+    font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
 }
 #Myface{
+    float: left;
     width: 200px;
     height: 200px;
     border: 1px solid black;
+    margin: 2px;
 }
 a {
     color: rgb(49, 45, 45)
@@ -18,6 +20,7 @@ a:hover {
 }
 nav {
     display:flex;
+    text-align: center;
     justify-content: end;
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,35 +31,43 @@ nav p {
     border: 1px solid rgb(179, 174, 174);
    background-color: aliceblue;
 }
-h2 {
-    display: block;
-    font-size: 36px;
-    background-color: aliceblue;
-    Color: rgb(49,45,45)
-}
 section, footer {
-    display: relative;
+    display: inline-block;
+    margin-left: 10px;
     text-align: start;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
     padding: 4px;
     justify-content: end;
 }
+h2 {
+    text-decoration: underline;
+    font-size: 36px;
+    background-color: aliceblue;
+    Color: rgb(49,45,45)
+}
 #image1 {
-    display:flex;
+    position:relative;
     float:left;
     width: 800px;
     height: 600px;
     justify-content:center;
-    border: 6px solid rgb(39,114,107);
+    text-align:left;
+    border: 9px solid rgb(39,114,107);
 }
-#First-text {
+div.Image-1{
+    position: relative;
+}
+div.Image-1 p{
     position: absolute;
-    bottom: 300px;
-    display: block;
-    background-color: rgb(39,114,107);
-    color: rgb(49, 45, 45);
+    top: 500px;
+    left: 9px;
+    background-color: rgb(39, 114, 107);
+    padding: 10px;
+    color: aliceblue;
 }
-#image1:hover {
+div.Image-1:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
@@ -68,7 +79,7 @@ section, footer {
     flex-direction: row;
     width:400px;
     height:300px;
-    border: 4px solid rgb(39,114,107);
+    border: 3px solid rgb(39,114,107);
 }
 #stock2:hover {
     color:aliceblue;
