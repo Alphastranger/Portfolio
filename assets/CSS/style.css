@@ -43,9 +43,11 @@ section, footer {
 }
 #image1 {
     display:flex;
+    float:left;
     width: 800px;
     height: 600px;
-    border: 2px solid black;
+    justify-content:center;
+    border: 6px solid rgb(39,114,107);
 }
 #First-text {
     position: absolute;
@@ -62,9 +64,11 @@ section, footer {
 .images2 {
     display: inline-flex;
     flex-wrap: wrap;
+    justify-content:space-between;
+    flex-direction: row;
     width:400px;
     height:300px;
-    border: 2px solid black;
+    border: 4px solid rgb(39,114,107);
 }
 #stock2:hover {
     color:aliceblue;
@@ -77,6 +81,21 @@ section, footer {
     opacity: 20%;
 }
 #stock4:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+#stock5:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+#stock6:hover {
+    color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+}
+#stock7:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
