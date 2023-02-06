@@ -35,18 +35,18 @@ h2 {
     text-decoration: underline;
     font-size: 36px;
     background-color: aliceblue;
+    padding: 2px;
+    margin: 4px;
     Color: rgb(49,45,45)
 }
-#image1 {
-    position:relative;
-    float:left;
-    width: 800px;
-    height: 600px;
-    justify-content:center;
+/* .image-1 {
+     width: 800px;
+    height: 600px; 
+    justify-content:space-between;
     text-align:left;
     border: 9px solid rgb(39,114,107);
-}
-/* div.Image-1 p{
+}*/
+ /* div.image-1 p{
     position: absolute;
     top: 500px;
     left: 9px;
@@ -54,11 +54,6 @@ h2 {
     padding: 10px;
     color: aliceblue;
 } */
-div.Image-1:hover {
-    color:aliceblue;
-    cursor: grab;
-    opacity: 20%;
-}
 .page-section {
     display: flex;
     flex-direction: row;
@@ -67,22 +62,28 @@ div.Image-1:hover {
     justify-content: space-between;
     margin: 25px 0;
     padding: 10px 0;
+    font-size: 24px;
 }
-/* #My-Work {
+ /* #My-Work {
     width:auto;
     height: 500px;
 } */
-.workcontainer {
+.workcontain {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: space-between; */
+}
+h3 {
+    position: relative;
+    top: 80%;
+    background-color: rgb(39, 114, 107);
 }
 .image-1 {
     background-image: url("../Images/Stock1.jpeg");
-}
-.images:first-child {
-min-height: 400px;
-flex-basis: 100%;
+    /* width: 300px; */
+    /* height: 300px;  */
+    /* justify-content:space-between; */
+    border: 9px solid rgb(39,114,107);
 }
 .image-2 {
     background-image: url("../Images/Stock2.jpeg");
@@ -104,9 +105,9 @@ flex-basis: 100%;
 }
 .images {
     display: flex;
-    background-size: 150%;
-    align-items: flex-end;
-    min-height: 150px;
+    background-size: 100%;
+    align-items: stretch;
+    min-height: 250px;
     max-height: 150px;
     margin: 0.5em;
     flex-wrap: wrap;
@@ -117,32 +118,41 @@ flex-basis: 100%;
     padding: 0 0 20px 0;
     border: 3px solid rgb(39,114,107);
 }
-#stock2:hover {
+.images:first-child {
+    min-height: 450px;
+    flex-basis: 100%;
+    }
+ .image-1:hover {
+   color:aliceblue;
+    cursor: grab;
+    opacity: 20%;
+ }
+.image-2:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#stock3:hover {
+.image-3:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#stock4:hover {
+.image-4:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#stock5:hover {
+.image-5:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#stock6:hover {
+.image-6:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#stock7:hover {
+.image-7:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
@@ -150,15 +160,15 @@ flex-basis: 100%;
 @media screen and (max-width: 900px) {
     nav, section, footer {
         flex-direction: column;
-        display: block;
+        display: flex;
     }
-    #image1{
+    .image-1{
         width:500px;
         Height:400px;
     }
 }
 @media screen and (max-width: 700px){
-    #image1{
+    .image-1{
         width: 400px;
         height:300px;
     }
