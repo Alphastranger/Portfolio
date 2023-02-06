@@ -72,6 +72,13 @@ div.Image-1:hover {
     cursor: grab;
     opacity: 20%;
 }
+#My-Work {
+    width:auto;
+    height: 500px;
+}
+.image-1 {
+    background-image: url("../Images/image4.jpeg");
+}
 .images2 {
     display: inline-flex;
     flex-wrap: wrap;
