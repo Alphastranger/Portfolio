@@ -31,16 +31,6 @@ nav p {
     border: 1px solid rgb(179, 174, 174);
    background-color: aliceblue;
 }
-section, footer {
-    display: inline-block;
-    margin-left: 10px;
-    text-align: start;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    padding: 4px;
-    justify-content: end;
-}
 h2 {
     text-decoration: underline;
     font-size: 36px;
@@ -56,36 +46,75 @@ h2 {
     text-align:left;
     border: 9px solid rgb(39,114,107);
 }
-div.Image-1{
-    position: relative;
-}
-div.Image-1 p{
+/* div.Image-1 p{
     position: absolute;
     top: 500px;
     left: 9px;
     background-color: rgb(39, 114, 107);
     padding: 10px;
     color: aliceblue;
-}
+} */
 div.Image-1:hover {
     color:aliceblue;
     cursor: grab;
     opacity: 20%;
 }
-#My-Work {
+.page-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 10px 0;
+}
+/* #My-Work {
     width:auto;
     height: 500px;
+} */
+.workcontainer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .image-1 {
+    background-image: url("../Images/Stock1.jpeg");
+}
+.images:first-child {
+min-height: 400px;
+flex-basis: 100%;
+}
+.image-2 {
+    background-image: url("../Images/Stock2.jpeg");
+}
+.image-3 {
+    background-image: url("../Images/Stock3.jpeg");
+}
+.image-4 {
     background-image: url("../Images/image4.jpeg");
 }
-.images2 {
-    display: inline-flex;
+.image-5 {
+    background-image: url("../Images/Stock5.jpeg");
+}
+.image-6 {
+    background-image: url("../Images/Stock6.jpeg");
+}
+.image-7 {
+    background-image: url("../Images/Stock7.jpeg");
+}
+.images {
+    display: flex;
+    background-size: 150%;
+    align-items: flex-end;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 0.5em;
     flex-wrap: wrap;
+    flex-basis: calc(50% - 1em);
     justify-content:space-between;
     flex-direction: row;
-    width:400px;
-    height:300px;
+    text-decoration: none;
+    padding: 0 0 20px 0;
     border: 3px solid rgb(39,114,107);
 }
 #stock2:hover {
