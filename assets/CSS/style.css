@@ -6,7 +6,7 @@ header {
     font-family: 'Times New Roman', Times, serif;
 }
 #Myface{
-    float: left;
+     float: left; 
     width: 200px;
     height: 200px;
     border: 1px solid black;
@@ -21,9 +21,10 @@ a:hover {
 nav {
     display:flex;
     text-align: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
     align-content: flex-end;
 }
 nav p {
@@ -32,6 +33,7 @@ nav p {
    background-color: aliceblue;
 }
 h2 {
+    display: inline;
     text-decoration: underline;
     font-size: 36px;
     background-color: aliceblue;
@@ -59,7 +61,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 25px 0;
     padding: 10px 0;
     font-size: 24px;
@@ -71,7 +73,10 @@ h2 {
 .workcontain {
     display:flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    flex-grow: 1;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
 }
 h3 {
     position: relative;
@@ -80,10 +85,6 @@ h3 {
 }
 .image-1 {
     background-image: url("../Images/Stock1.jpeg");
-    /* width: 300px; */
-    /* height: 300px;  */
-    /* justify-content:space-between; */
-    border: 9px solid rgb(39,114,107);
 }
 .image-2 {
     background-image: url("../Images/Stock2.jpeg");
@@ -108,11 +109,12 @@ h3 {
     background-size: 100%;
     align-items: stretch;
     min-height: 250px;
-    max-height: 150px;
+    max-height: 500px;
+    /* flex-basis: 100%; */
     margin: 0.5em;
     flex-wrap: wrap;
-    flex-basis: calc(50% - 1em);
-    justify-content:space-between;
+    flex-basis: calc(49% - 1em);
+    /* justify-content:flex-start; */
     flex-direction: row;
     text-decoration: none;
     padding: 0 0 20px 0;
@@ -121,7 +123,8 @@ h3 {
 .images:first-child {
     min-height: 450px;
     flex-basis: 100%;
-    }
+    border: 9px solid rgb(39,114,107);
+ }
  .image-1:hover {
    color:aliceblue;
     cursor: grab;
@@ -159,8 +162,9 @@ h3 {
 }
 @media screen and (max-width: 900px) {
     nav, section, footer {
-        flex-direction: column;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .image-1{
         width:500px;
@@ -171,5 +175,8 @@ h3 {
     .image-1{
         width: 400px;
         height:300px;
+    }
+    .images{
+        flex-basis: 100%;
     }
 }
