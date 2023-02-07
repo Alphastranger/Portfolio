@@ -7,4 +7,4 @@ The CSS gave me a lot more trouble, as many elements simply didn't do what I wan
 Screenshot:
 ![alt text](./assets/Images/Screenshot.png)
 
-Link to site:
+Link to site:https://alphastranger.github.io/OSU-Bootcamp-Challenge-2/
